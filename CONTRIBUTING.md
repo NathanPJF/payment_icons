@@ -49,9 +49,10 @@ The markup below will also make the icon accessible to assistive technology when
   - Whenever possible, the background color does not use a gradient fill.
   - Transparent backgrounds will not be accepted.
 - Icons have a visible border to give them a consistent shape on pages whose backgrounds match that of the icon.
-  - Whenever possible, the border should be black with a 0.07% opacity.
+  - Whenever possible, the border should be black with a 7% opacity.
   - The border width must be 1px (pixel) thick.
   - The border must have a 2px radius (outside stroke).
+  - It is recommended to make a border by stacking two shapes (see [template below](#template)). This prevents an issue with stroke-based borders disappearing in inline SVGs when exported from certain editing tools.
 
 ### File
 - The name of the SVG must be the same as the `name` entered in `db/payment_icons.yml`
